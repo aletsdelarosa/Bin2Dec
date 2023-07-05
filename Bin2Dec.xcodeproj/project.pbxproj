@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		951FFF6C2A55ECD800FB3517 /* ConversionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951FFF6B2A55ECD800FB3517 /* ConversionSection.swift */; };
+		951FFF6E2A55EDA800FB3517 /* SwitchConversionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951FFF6D2A55EDA800FB3517 /* SwitchConversionButton.swift */; };
+		951FFF702A55EE0F00FB3517 /* ResultsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951FFF6F2A55EE0F00FB3517 /* ResultsSection.swift */; };
+		951FFF722A55EE7E00FB3517 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951FFF712A55EE7E00FB3517 /* Keyboard.swift */; };
+		951FFF742A55F24B00FB3517 /* ValueRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951FFF732A55F24B00FB3517 /* ValueRow.swift */; };
+		951FFF782A55F2CB00FB3517 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951FFF772A55F2CB00FB3517 /* Calculator.swift */; };
 		9544A2942A55D379002542D4 /* Bin2DecApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9544A2932A55D379002542D4 /* Bin2DecApp.swift */; };
 		9544A2962A55D379002542D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9544A2952A55D379002542D4 /* ContentView.swift */; };
 		9544A2982A55D37A002542D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9544A2972A55D37A002542D4 /* Assets.xcassets */; };
 		9544A29B2A55D37A002542D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9544A29A2A55D37A002542D4 /* Preview Assets.xcassets */; };
+		9544A2A22A55D7F2002542D4 /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9544A2A12A55D7F2002542D4 /* CalculatorViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		951FFF6B2A55ECD800FB3517 /* ConversionSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionSection.swift; sourceTree = "<group>"; };
+		951FFF6D2A55EDA800FB3517 /* SwitchConversionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchConversionButton.swift; sourceTree = "<group>"; };
+		951FFF6F2A55EE0F00FB3517 /* ResultsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsSection.swift; sourceTree = "<group>"; };
+		951FFF712A55EE7E00FB3517 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+		951FFF732A55F24B00FB3517 /* ValueRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueRow.swift; sourceTree = "<group>"; };
+		951FFF772A55F2CB00FB3517 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		9544A2902A55D379002542D4 /* Bin2Dec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bin2Dec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9544A2932A55D379002542D4 /* Bin2DecApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bin2DecApp.swift; sourceTree = "<group>"; };
 		9544A2952A55D379002542D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9544A2972A55D37A002542D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9544A29A2A55D37A002542D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9544A2A12A55D7F2002542D4 /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		951FFF752A55F2A500FB3517 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9544A2A12A55D7F2002542D4 /* CalculatorViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		951FFF762A55F2BF00FB3517 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				951FFF772A55F2CB00FB3517 /* Calculator.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		9544A2872A55D379002542D4 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +81,9 @@
 		9544A2922A55D379002542D4 /* Bin2Dec */ = {
 			isa = PBXGroup;
 			children = (
+				951FFF762A55F2BF00FB3517 /* Models */,
+				951FFF752A55F2A500FB3517 /* ViewModels */,
+				9544A2A32A55E978002542D4 /* Views */,
 				9544A2932A55D379002542D4 /* Bin2DecApp.swift */,
 				9544A2952A55D379002542D4 /* ContentView.swift */,
 				9544A2972A55D37A002542D4 /* Assets.xcassets */,
@@ -65,6 +98,18 @@
 				9544A29A2A55D37A002542D4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9544A2A32A55E978002542D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				951FFF6B2A55ECD800FB3517 /* ConversionSection.swift */,
+				951FFF6D2A55EDA800FB3517 /* SwitchConversionButton.swift */,
+				951FFF6F2A55EE0F00FB3517 /* ResultsSection.swift */,
+				951FFF712A55EE7E00FB3517 /* Keyboard.swift */,
+				951FFF732A55F24B00FB3517 /* ValueRow.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +183,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9544A2962A55D379002542D4 /* ContentView.swift in Sources */,
+				951FFF6E2A55EDA800FB3517 /* SwitchConversionButton.swift in Sources */,
+				951FFF722A55EE7E00FB3517 /* Keyboard.swift in Sources */,
+				951FFF702A55EE0F00FB3517 /* ResultsSection.swift in Sources */,
+				951FFF6C2A55ECD800FB3517 /* ConversionSection.swift in Sources */,
+				951FFF782A55F2CB00FB3517 /* Calculator.swift in Sources */,
+				9544A2A22A55D7F2002542D4 /* CalculatorViewModel.swift in Sources */,
+				951FFF742A55F24B00FB3517 /* ValueRow.swift in Sources */,
 				9544A2942A55D379002542D4 /* Bin2DecApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

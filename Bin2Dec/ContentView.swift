@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var viewModel = CalculatorViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack {
+                ConversionSection()
+                
+                SwitchConversionButton()
+                
+                ResultsSection()
+                
+                Spacer()
+                
+                Keyboard()
+            }
+            .navigationTitle("Bin2Dec")
+            .background(Color(UIColor.systemGroupedBackground))
         }
-        .padding()
+        .environmentObject(viewModel)
     }
 }
 
