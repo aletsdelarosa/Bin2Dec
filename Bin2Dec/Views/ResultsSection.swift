@@ -26,7 +26,7 @@ struct ResultsSection: View {
             Spacer()
         }
         .padding()
-        .background(Color.white)
+        .background(Color("SectionBackground"))
         .cornerRadius(10.0)
         .padding(.horizontal)
     }
